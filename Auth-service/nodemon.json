@@ -1,0 +1,7 @@
+{
+  "verbose": "false",
+  "watch": ["./src"],
+  "ext": "ts,js",
+  "delay": "1500",
+  "exec": "webpack && node ./build/dist.js"
+}

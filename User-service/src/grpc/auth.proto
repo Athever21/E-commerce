@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+service Confirm {
+  rpc confirmLogin (confirmRequest) returns (confirmReply) {}
+  rpc checkLogin (checkRequest) returns (checkReply) {}
+}
+
+message checkRequest {
+  string id = 1;
+}
+
+message checkReply {
+  message user {
+    string id = 1;
+    string username = 2;
+    string email = 3;
+    string img = 4;
+  }
+
+  user u = 1;
+}
+
+
+message confirmRequest {
+  string login = 1;
+  string password = 2;
+}
+
+message confirmReply {
+  string id = 1;
+  bool flag = 2;
+}
+
+
+service AccessToken {
+  rpc confirmToken (tokenRequest) returns (tokenReply) {}
+}
+
+message tokenRequest {
+  string token = 1;
+}
+
+message tokenReply {
+  string id = 1;
+}

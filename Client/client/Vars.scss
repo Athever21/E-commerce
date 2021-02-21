@@ -1,0 +1,29 @@
+$pallet1: #60adf0;
+$pallet2: #07456f;
+$pallet3: #467599;
+$pallet4: #cdffeb;
+
+$logout: #700d0d;
+$add: #199b3a;
+$add-dark: #123f11;
+
+$dark-1: #141414;
+$dark-2: #262727;
+$dark-3: #444343;
+$dark-4: #303030;
+$dark-5: #5f5f5f;
+
+$font: #dbd7d7;
+$background: #0C0910;
+$header: #563440;
+
+@mixin button($color) {
+  padding: 0.5rem;
+  background: $color;
+  border: 1px solid darken($color,5);
+
+  &:hover {
+    cursor: pointer;
+    background: lighten($color,5);
+  }
+}

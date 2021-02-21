@@ -1,0 +1,7 @@
+{
+  "verbose": false,
+  "watch": "./server",
+  "exec": "webpack --config ./webpack.server.js && node ./build/server.js",
+  "delay": "2000",
+  "ext": "ts,js"
+}

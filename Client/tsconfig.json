@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "outDir": "./build/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "CommonJS",
+    "target": "es5",
+    "esModuleInterop": true,
+    "allowJs": true,
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react"
+  },
+  "include": [
+    "globals.d.ts", "types.ts", "__tests__","@types/**/*.ts"
+  ],
+  "files": [
+    "webpack.client.js",
+    "webpack.server.js",
+    "webpack.client.prod.js"
+  ]
+}

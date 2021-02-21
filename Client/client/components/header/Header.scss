@@ -1,0 +1,87 @@
+@import "../../Vars.scss";
+
+header {
+  display: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $header;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    padding: 0.5rem;
+  }
+
+  .user {
+    margin-left: auto;
+
+    button {
+      @include button($pallet3);
+      margin-right: 1rem;
+    }
+  }
+
+  .login-modal {
+    width: 30%;
+
+    h2 {
+      text-align: center;
+      margin: 0.5rem 0;
+      font-size: 2.5rem;
+    }
+
+    .inputs,.input {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.2rem;
+    }
+
+    input,button {
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      border-radius: 5px;
+    }
+
+    input {
+      background: $dark-5;
+    }
+
+    button {
+      font-size: 1.2rem;
+    }
+  }
+
+  .login-nav {
+    margin: 0.5rem;
+
+    span {
+      color: $pallet1;
+
+      &:hover {
+        cursor: pointer;
+        color: lighten($pallet1,5);
+      }
+    }
+  }
+
+  .user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1rem;
+
+    h3 {
+      margin-right: 1rem;
+    }
+
+    button {
+      background: $logout !important;
+      border-color: darken($logout, 5);
+
+      &:hover {
+        background: lighten($logout, 5) !important;
+      }
+    }
+  }
+}
